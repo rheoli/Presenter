@@ -1,0 +1,6 @@
+%h1 Presenter
+
+%ul
+  - @pres.each do |p|
+    %li
+      %a{:href=>"/view/#{p}"}= p
