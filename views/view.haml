@@ -1,12 +1,13 @@
 %h1 Present
 
-%p
-  %div{:id=>"state"}
+%div{:id=>"state"}
+  %p
     undefined
-%p
-  %img{:src=>@img, :id=>"present"}
+
+%div{:id=>"present"}
+  %img{:src=>@img}
 
 %script{:type=>"text/javascript", :src=>"/javascript/ajax.js"}
 
-%script
-  = "document.onload=\"imageChange('#{params["present"]}');\""
+- # %script{:type=>"text/javascript"}
+- # "window.onLoad=\"imageChange('#{params["present"]}');\""
