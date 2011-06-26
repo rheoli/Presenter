@@ -1,8 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'sinatra'
+gem 'goliath'
+gem 'em-redis'
 gem 'haml'
-
-gem 'sinatra-reloader'
 
 #=EOF

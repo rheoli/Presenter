@@ -1,7 +1,11 @@
-%h1 Admin
+%h1 Present
 
-%ul
+%p
+  %div{:id=>"present"}
+    keine aktuelle Folie
+%div
   - @pres.each do |p|
-    %li
-      %a{:href=>"/admin/#{p}"}= p
+    %a{:href=>"#", :onclick=>"activatePresent('/admin/#{params["present"]}/#{p}')"}
+      %img{:width=>"200", :src=>"/images/#{params["present"]}/#{p}"}
 
+%script{:type=>"text/javascript", :src=>"/javascript/ajax.js"}
