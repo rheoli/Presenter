@@ -1,5 +1,5 @@
 %html
   %head
     %title Presenter
-  %body
+  %body{:onLoad=>"imageChange('#{params["present"]}');"}
     = yield
