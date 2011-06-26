@@ -1,3 +1,4 @@
 data/*
 .rvmrc
 Gemfile.lock
+.DS_Store
