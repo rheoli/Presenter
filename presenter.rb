@@ -3,6 +3,11 @@
 
 PRESENTER_BASE=File.dirname(__FILE__)
 
+$: << PRESENTER_BASE+"/lib"
+
+#require 'redis' 
+#require 'redis/connection/synchrony' 
+
 require 'goliath'
 require 'goliath/rack/templates'
 
